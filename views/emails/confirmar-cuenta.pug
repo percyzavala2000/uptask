@@ -1,0 +1,14 @@
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style 
+          include ./email.css
+          
+    body 
+        h2 Confirma tu cuenta Uptask
+        p Hola, has solicitado restablecer tu password, haz click en el siguiente enlace para restablecerlo, este enlace es temporal, asi que si se vende vuelve a solicitarlo 
+        a(href=`${consfirmarUrl}`) Confirmar Cuenta 
+        p Si no puedes acceder a este enlace, visita #{consfirmarUrl}
+        p Si no solicitaste este e-mail, puedes ignorarlo
